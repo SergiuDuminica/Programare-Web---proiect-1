@@ -1,0 +1,95 @@
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<form>
+    <fieldset class="formular" float="left">
+        <legend>Introduceti informatiile generale:</legend>
+
+        <label for="username">Nume utilizator:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Parola:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume"><br><br>
+
+        <label for="prenume">Prenume:</label>
+        <input type="text" id="prenume" name="prenume"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="nrtlf">Numar de telefon:</label>
+        <input type="tel" id="nrtlf" name="nrtlf" pattern="[0-9]{10}"><br><br>
+    </fieldset>
+
+    <fieldset class="formular" float="right">
+        <legend>Introduceti informatiile personale:</legend>
+
+        <label for="sexul">Sexul:</label>
+        <select name="sexul" id="sexul">
+            <option value="Masculin">Masculin</option>
+            <option value="Feminin">Feminin</option>
+        </select><br><br>
+
+        <label for="marca">Marca de masini preferata:</label>
+        <input list="lista_marci" name="marca" id="marca">
+        <datalist id="lista_marci">
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Ford">Ford</option>
+            <option value="Fiat">Fiat</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Dacia">Dacia</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Honda">Honda</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Peugeot">Peugeot</option>
+            <option value="KIA">KIA</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mercedes-benz">Mercedes-benz</option>
+            <option value="Skoda">Skoda</option>
+            <option value="Renault">Renault</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Opel">Opel</option>
+            <option value="Alfa Romeo">Alfa Romeo</option>
+            <option value="Chrysler">Chrysler</option>
+            <option value="Citroen">Citroen</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="Seat">Seat</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Land Rover">Land Rover</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Rolls-Royce">Rolls-Royce</option>
+            <option value="Bentley">Bentley</option>
+            <option value="Lamborghini">Lamborghini</option>
+        </datalist><br><br>
+
+        <label for="culoare">Culoarea preferata:</label>
+        <input type="color" id="culoare" name="culoare"><br><br>
+
+        <label for="data_nasterii">Data nasterii:</label>
+        <input type="date" id="data_nasterii" name="data_nasterii"><br><br>
+
+        <label for="ora_nasterii">Ora nasterii:</label>
+        <input type="time" id="ora_nasterii" name="ora_nasterii"><br><br>
+
+        <label for="varsta">Varsta:</label>
+        <input type="range" id="varsta" name="varsta" min="18" max="99" step="1"><br><br>
+
+        <label for="url">Link profil personal:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+        <label for="descriere">Descriere:</label>
+        <input type="textarea" id="descriere" name="descriere"><br><br>
+    </fieldset><br>
+
+    <button class="button" onClick="inregistreaza()">Inregistreaza</button>
+</form>

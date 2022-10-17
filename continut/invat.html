@@ -1,0 +1,36 @@
+<h2>Secțiune informativă</h2>
+<p id="s1"></p>
+<p id="s1_1"></p>
+<p id="s1_2"></p>
+<p id="s1_3"></p>
+<h2>Secțiune desenare</h2>
+<p>Selectați culoarea conturului:</p>
+<input id="culoare_contur" type="color"><br><br>
+<p>Selectați culoarea umplerii:</p>
+<input id="culoare_umplere" type="color"><br><br>
+<canvas id="Canvas" width="500" height="300" style="border:1px solid #000000;"
+  onClick="desenare_canvas(event);"></canvas>
+<h2>Sectiune tabel</h2>
+<label for="linie">Linie</label>
+<input type="number" id="linie" name="linie"><br><br>
+<label for="coloana">Coloana</label>
+<input type="number" id="coloana" name="coloana"><br><br>
+<p>Selectați culoarea:</p>
+<input id="culoare_background" type="color"><br><br>
+<button type="submit" onclick="addRow()">Adaugare linie</button>
+<button type="submit" onclick="addColumn()">Adaugare coloana</button>
+<table class="tabel" id="s3">
+  <tr>
+    <td>Rosii</td>
+    <td>Castraveti</td>
+  </tr>
+  <tr>
+    <td>Rosii</td>
+    <td>Castraveti</td>
+  </tr>
+  <tr>
+    <td>Rosii</td>
+    <td>Castraveti</td>
+  </tr>
+
+</table>

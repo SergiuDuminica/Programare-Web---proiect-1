@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE persoane [
+<!ELEMENT persoane (persoana*)>
+<!ELEMENT persoana (id*,nume,prenume,gen,varsta,adresa,numartelefon,email)>
+<!ATTLIST persoana id CDATA #REQUIRED>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT gen (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT adresa (strada,numar,localitate,judet,tara)>
+<!ELEMENT strada (#PCDATA)>
+<!ELEMENT numar (#PCDATA)>
+<!ELEMENT localitate (#PCDATA)>
+<!ELEMENT judet (#PCDATA)>
+<!ELEMENT tara (#PCDATA)>
+<!ELEMENT numartelefon (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+]>
+
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <gen>Masculin</gen>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Paraului</strada>
+            <numar>33</numar>
+            <localitate>Breazu</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <numartelefon>0712345601</numartelefon>
+        <email>ion.popescu@gmail.com</email>
+    </persoana>
+
+    <persoana id="2">
+        <nume>Duminica</nume>
+        <prenume>Ionel-Sergiu</prenume>
+        <gen>Masculin</gen>
+        <varsta>21</varsta>
+        <adresa>
+            <strada>Bucium</strada>
+            <numar>15</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <numartelefon>0712345602</numartelefon>
+        <email>ionel-sergiu.duminica@student.tuiasi.ro</email>
+    </persoana>
+
+    <persoana id="3">
+        <nume>Ionescu</nume>
+        <prenume>Rares</prenume>
+        <gen>Masculin</gen>
+        <varsta>27</varsta>
+        <adresa>
+            <strada>Doi Brazi</strada>
+            <numar>42</numar>
+            <localitate>Hlincea</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <numartelefon>0712345603</numartelefon>
+        <email>rares.ionescu@yahoo.com</email>
+    </persoana>
+
+    <persoana id="4">
+        <nume>Mocanu</nume>
+        <prenume>Alexandra</prenume>
+        <gen>Feminin</gen>
+        <varsta>18</varsta>
+        <adresa>
+            <strada>Stugurilor</strada>
+            <numar>70</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <numartelefon>0712345604</numartelefon>
+        <email>alexandra.mocanu@gmail.com</email>
+    </persoana>
+
+    <persoana id="5">
+        <nume>Gramescu</nume>
+        <prenume>George</prenume>
+        <gen>Masculin</gen>
+        <varsta>24</varsta>
+        <adresa>
+            <strada>Decebal</strada>
+            <numar>56</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <numartelefon>0712345605</numartelefon>
+        <email>george.gramescu@yahoo.com</email>
+    </persoana>
+</persoane>
